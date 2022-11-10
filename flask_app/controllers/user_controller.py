@@ -1,13 +1,13 @@
 from flask import session, request, render_template, redirect, flash
 from flask_app import app
-from flask_app.models.user_model import User
+
 from flask_bcrypt import Bcrypt
 
 bcrypt = Bcrypt ( app )
 
 @app.route( "/" )
 def display_login_registration():
-  return render_template( "index.html" )
+  return render_template( "loginRegistration.html" )
 
 
 # This is validating the email exist
