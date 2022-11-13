@@ -25,8 +25,8 @@ class User:
 
   @classmethod
   def create ( cls, data ):
-    query = "INSERT INTO users( email, first_name, last_name, password )"
-    query += "VALUES( %(email)s, %(first_name)s, %(last_name)s, %(password)s );"
+    query = "INSERT INTO users(first_name, last_name , email, password )"
+    query += "VALUES( %(first_name)s, %(last_name)s, %(email)s, %(password)s );"
     query += "WHERE id = %(id)s;"
     return  connectToMySQL( DATABASE ).query_db( query, data )
 
