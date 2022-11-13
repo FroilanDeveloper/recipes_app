@@ -1,6 +1,6 @@
 from flask import session, request, render_template, redirect, flash
 from flask_app import app
-
+from flask_app.models.user_model import User
 from flask_bcrypt import Bcrypt
 
 bcrypt = Bcrypt ( app )
@@ -21,7 +21,6 @@ def create_user():
       "email" : request.form[ 'email' ]
     }
     result = User.get_one( data )
-    
     if result == None:
       # Add the new user
       data ={
