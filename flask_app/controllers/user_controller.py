@@ -7,7 +7,7 @@ bcrypt = Bcrypt ( app )
 
 @app.route( "/" )
 def display_login_registration():
-  return render_template( "loginRegistration.html" )
+  return render_template( "index.html" )
 
 
 # This is validating the email exist
