@@ -74,8 +74,8 @@ def display_recipe_edit( id ):
 def update_recipe( id ):
   data = {
     "id" : id,
-    "names" : request.form [ 'names'],
-    "image" : request.form[ 'image'],
+    "names" : request.form [ 'names' ],
+    "image" : request.form[ 'image' ],
     "descriptions" : request.form [ 'descriptions' ],
     "instructions" : request.form[ 'instructions' ],
     "under_thirty" : request.form[ 'under_thirty' ],
