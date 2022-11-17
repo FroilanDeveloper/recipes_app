@@ -22,7 +22,6 @@ def create_recipe():
     "image" : request.form[ 'image'],
     "descriptions" : request.form[ 'descriptions' ],
     "instructions" : request.form[ 'instructions' ],
-    "updated_at" : request.form[ 'updated_at' ],
     "under_thirty" : request.form[ 'under_thirty' ],
     "user_id" : session[ 'user_id' ]
   }
